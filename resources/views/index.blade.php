@@ -1,158 +1,27 @@
+<!-- <form action="#" method="post">
+  <table>
+  <tr>
+  <th><label for="name">名前</label></th>
+  <td><input type="text" name="name" id="name"></td>
+  </tr>
+  <tr>
+  <th><label for="mail">メールアドレス</label></th>
+  <td><input type="email" name="mail" id="mail"></td>
+  </tr>
+  </table>
+  <button type="submit">送信する</button>
+</form> -->
 
 
-
-<!-- 
-  <p>{{$txt}}</p>
-  @if (count($errors) > 0)
-    <p>入力に問題があります</p>
-  @endif
-  <form action="/" method="POST">
-    <table>
-      @csrf
-      @error('name') 
-      <tr>
-        <th>Error</th>
-        <td>{{$message}}</td>
-      </tr>
-      @enderror
-      <tr>
-        <th>名前</th>
-        <td>
-          <input type="text" name="name">
-        </td>
-      </tr>
-      @error('role')   
-      <tr>
-        <th>Error</th>
-        <td>{{$message}}</td>
-      </tr>
-      @enderror
-      <tr>
-        <th>役職</th>
-        <td>
-          <input type="text" name="role">
-        </td>
-      </tr>
-      @error('email')  
-      <tr>
-        <th>Error</th>
-        <td>{{$message}}</>        
-      </tr>
-      @enderror
-      <tr>
-        <th>メール</th>
-        <td>
-          <input type="email" name="email">
-        </td>
-      </tr>
-      @error('age')
-      <tr>
-        <th>Error</th>
-        <td>{{$message}}</td>
-      </tr>
-      @enderror
-      <tr>
-        <th>年齢</th>
-        <td>
-          <input type="text" name="age">
-        </td>
-      </tr>
-      @error('registered_at')
-      <tr>
-        <th>Error</th>
-        <td>{{$message}}</td>
-      </tr>
-      @enderror
-      <tr>
-        <th>登録日</th>
-        <td>
-          <input type="text" name="registered_at">
-        </td>
-      </tr>
-    </table>
-    <input type="submit" value="送信">
-  </form> -->
-
-<!-- <p>{{$txt}}</p>
-  @if (count($errors) > 0)
-    <p>入力に問題があります</p>
-  @endif
-  <form action="/" method="POST">
-    <table>
-      @csrf
-      @if ($errors->has('name'))
-        <tr>
-          <th>ERROR</th>
-          <td>
-            {{$errors->first('name')}}
-          </td>
-        </tr>
-      @endif
-      <tr>
-        <th>名前</th>
-        <td>
-          <input type="text" name="name">
-        </td>
-      </tr>
-      @if ($errors->has('role'))
-        <tr>
-          <th>ERROR</th>
-          <td>
-            {{$errors->first('role')}}
-          </td>
-        </tr>
-      @endif
-      <tr>
-        <th>役職</th>
-        <td>
-          <input type="text" name="role">
-        </td>
-      </tr>
-      @if ($errors->has('email'))
-        <tr>
-          <th>ERROR</th>
-          <td>
-            {{$errors->first('email')}}
-          </td>
-        </tr>
-      @endif
-      <tr>
-        <th>メール</th>
-        <td>
-          <input type="email" name="email">
-        </td>
-      </tr>
-      @if ($errors->has('age'))
-        <tr>
-          <th>ERROR</th>
-          <td>
-            {{$errors->first('age')}}
-          </td>
-        </tr>
-      @endif
-      <tr>
-        <th>年齢</th>
-        <td>
-          <input type="text" name="age">
-        </td>
-      </tr>
-      @if ($errors->has('registered_at'))
-        <tr>
-          <th>ERROR</th>
-          <td>
-            {{$errors->first('registered_at')}}
-          </td>
-        </tr>
-      @endif
-      <tr>
-        <th>登録日</th>
-        <td>
-          <input type="text" name="registered_at">
-        </td>
-      </tr>
-    </table>
-    <input type="submit" value="送信">
-  </form> -->
-
-</body>
-</html>
+<form action="#" method="post">
+  @csrf
+<dl>
+  <dt><label for="name">名前</label></dt>
+    <dd><input type="text" name="name" id="name"></dd>
+</dl>
+<dl>
+  <dt><label for="mail">メールアドレス</label></dt>
+    <dd><input type="text" name="mail" id="mail"></dd>
+</dl>
+  <button type="submit">送信する</button>
+</form>

@@ -1,12 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TestController;
-use App\Http\Controllers\TestController1;
+use App\Http\Controllers\AuthorController;
+use App\Http\Controllers\ContactSendController;
 
-// use App\Http\Middleware\FirstMiddleware;
-
-// Route::post("/", [TestController::class, "post"]);
+Route::get('/', [AuthorController::class, 'contact']);
+Route::get('/contact', [AuthorController::class, "contact"]);
+Route::post('/contact', [ContactSendController::class, 'contact_send']);
 
 
 /*
@@ -74,6 +74,6 @@ use App\Http\Controllers\TestController1;
 //   return "建物です";
 // });
 
-Route::get("/buliding", [TestController::class, "index"]);
+// Route::get("/buliding", [TestController::class, "index"]);
 
-Route::get("/buliding/{room}", [TestController1::class, "index"]);
+// Route::get("/buliding/{room}", [TestController1::class, "index"]);
