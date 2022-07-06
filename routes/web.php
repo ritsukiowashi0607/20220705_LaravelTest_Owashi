@@ -1,10 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\ContactSendController;
 
-Route::get('/', [AuthorController::class, 'contact']);
+Route::get('/', [ContactController::class, 'index']);
 Route::get('/contact', [AuthorController::class, "contact"]);
 Route::post('/contact', [ContactSendController::class, 'contact_send']);
 

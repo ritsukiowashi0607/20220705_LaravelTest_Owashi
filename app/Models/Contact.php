@@ -1,15 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Models;
 
-use App\Models\Contact;
-use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
-class AuthorController extends Controller
+class Contact extends Model
 {
-    public function contact()
-    {
-        $items = Author::all();
-        return view('contact', ['items' => $items]);
-    }
+    use HasFactory;
 }

@@ -5,16 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 
-class AuthorController extends Controller
+class ContactController extends Controller
 {
-    public function contact() {
-        return view('index');
-    }
-
-
 public function index()
     {
-        $items = Author::all();
+        $items = Contact::all();
         return view('index', ['items' => $items]);
     }
 }
