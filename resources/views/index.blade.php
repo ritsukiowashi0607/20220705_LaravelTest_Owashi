@@ -13,7 +13,7 @@
 </form> -->
 
 
-<form action="#" method="post">
+<form action="contact" method="post">
   @csrf
 <dl>
   <dt><label for="name">名前</label></dt>
@@ -21,7 +21,7 @@
 </dl>
 <dl>
   <dt><label for="mail">メールアドレス</label></dt>
-    <dd><input type="text" name="mail" id="mail"></dd>
+    <dd><input type="text" name="email" id="mail"></dd>
 </dl>
   <button type="submit">送信する</button>
 </form>

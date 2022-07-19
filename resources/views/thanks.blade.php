@@ -7,6 +7,6 @@
 </head>
 <body>
     <p>お問い合わせありがとうございます。</p>
-    <div><a href="#">ページトップへ戻る</a></div>
+    <div><a href="/">ページトップへ戻る</a></div>
 </body>
 </html>
